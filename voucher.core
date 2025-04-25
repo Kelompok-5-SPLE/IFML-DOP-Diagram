@@ -28,6 +28,7 @@
       </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:IFMLAction" id="_MnsDkCHnEfCHXrqDtvt3yA" name="Validate and Apply Code" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <annotations text="POST"/>
       <outInteractionFlows xsi:type="core:NavigationFlow" id="_SokA4CHnEfCHXrqDtvt3yA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
     </interactionFlowModelElements>
   </interactionFlowModel>
