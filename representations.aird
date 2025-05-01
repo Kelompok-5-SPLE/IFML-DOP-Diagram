@@ -10,6 +10,8 @@
   <semanticResources>pathmap://UML_METAMODELS/Ecore.metamodel.uml</semanticResources>
   <semanticResources>pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml</semanticResources>
   <semanticResources>Promo.core</semanticResources>
+  <semanticResources>menu.core</semanticResources>
+  <semanticResources>voucher.core</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" uid="_FaPf4CaREfC60touY8HFPA">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']"/>
   </ownedViews>
