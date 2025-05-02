@@ -20,6 +20,15 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_zfeSoCdwEfCkmNamYsUjng" name="Promo">
+      <annotations text="Promo"/>
+      <viewElementEvents id="_9KcjICdwEfCkmNamYsUjng" name="ViewElement Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_GMr_sCdxEfCkmNamYsUjng"/>
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_2XnSgCdyEfCFEMmZjFpbcQ">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="promo.core#//@interactionFlowModel/@interactionFlowModelElements.1/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_f0eYoSa1EfCx0K1dJzpb_g">
     <domainElements xsi:type="core:UMLBehavioralFeature" id="_f01lACa1EfCx0K1dJzpb_g" name="manageEditMenu">
