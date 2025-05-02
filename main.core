@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_f0eYoCa1EfCx0K1dJzpb_g">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_f0eYoCa1EfCx0K1dJzpb_g">
+  <interactionFlowModel id="_uEkroCctEfCGRdp12HFTEA">
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_uEnu8CctEfCGRdp12HFTEA" name="Home" isXOR="true">
+      <annotations text="/"/>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_BLxJgCcvEfCGRdp12HFTEA" name="Menu">
+      <annotations text="Menu"/>
+      <viewElementEvents id="_8apucCcvEfCGRdp12HFTEA" name="Menu">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_B3NoVycxEfCGRdp12HFTEA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+        </outInteractionFlows>
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_WKw1gCc7EfChr4htZQg63g">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_GQ-6YCcwEfCGRdp12HFTEA" name="Voucher">
+      <annotations text="Voucher"/>
+      <viewElementEvents id="_8apucCcvEfCGRdp12HFTEA" name="Voucher">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_JXe71ycxEfCGRdp12HFTEA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="voucher.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_PhrpsCcwEfCGRdp12HFTEA" name="Promo">
+      <annotations text="Promo"/>
+      <viewElementEvents id="_8apucCcvEfCGRdp12HFTEA" name="Promo">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_vT9IgCcwEfCGRdp12HFTEA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Promo.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
   <domainModel id="_f0eYoSa1EfCx0K1dJzpb_g">
     <domainElements xsi:type="core:UMLBehavioralFeature" id="_f01lACa1EfCx0K1dJzpb_g" name="manageEditMenu">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_UVyYsCHcEfC_nNkev7yNLQ"/>

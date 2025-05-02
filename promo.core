@@ -3,6 +3,7 @@
   <interactionFlowModel id="_WPpcUCHnEfC1LvxhNK3mkg">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_WQd7sCHnEfC1LvxhNK3mkg" name="Promo Page" isXOR="true">
       <annotations text="/promo"/>
+      <inInteractionFlows xsi:type="core:NavigationFlow" href="Main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
       <viewElements xsi:type="core:ViewContainer" id="_6Dm9ACHpEfC1LvxhNK3mkg" name="Menu with Promo" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@outInteractionFlows.0">
         <viewElements xsi:type="ext:List" id="_ElXrkCHqEfC1LvxhNK3mkg" name="Menu Table">
           <viewElementEvents id="_7MhwECHtEfC1LvxhNK3mkg" name="Order">
