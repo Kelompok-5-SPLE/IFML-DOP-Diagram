@@ -49,8 +49,8 @@
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:IFMLAction" id="_PLGcQCddEfCFSMFf2rjckQ" name="Save Voucher" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
         <annotations text="POST"/>
-        <actionEvents id="_VeOAICddEfCFSMFf2rjckQ">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_bK2y0CddEfCFSMFf2rjckQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
+        <actionEvents id="_xL_DgCdkEfCFSMFf2rjckQ">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_yJsB4CdkEfCFSMFf2rjckQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
         </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
