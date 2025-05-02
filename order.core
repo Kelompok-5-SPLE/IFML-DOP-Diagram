@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_TcWlYCa1EfCx0K1dJzpb_g">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_TcWlYCa1EfCx0K1dJzpb_g" name="">
+  <annotations text="Order"/>
+  <interactionFlowModel id="_Z0qWkCdKEfCbG6XKvKQTYQ">
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_Z0vPECdKEfCbG6XKvKQTYQ" name="Order" isXOR="true">
+      <viewElements xsi:type="core:ViewContainer" id="_KjF0gCdLEfCbG6XKvKQTYQ" name="OrderPage" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/order"/>
+        <viewElementEvents id="_QHNVoCdREfCwucEL_qXcmw" name="Modify" viewElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_qz4zoCdREfCwucEL_qXcmw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_Nx2vMCdOEfCwucEL_qXcmw" name="OrderTotalPrice">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="__RUrsCdSEfCwucEL_qXcmw" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_C_VOgCdTEfCwucEL_qXcmw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.1"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:VisualizationAttribute" id="_UkC0sCdOEfCwucEL_qXcmw" name="TotalPrice">
+            <featureConcept href="voucher.core#//@domainModel/@domainElements.12"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="ext:List" id="_mj-sYCdLEfCbG6XKvKQTYQ" name="OrderItemList">
+        <viewComponentParts xsi:type="core:DataBinding" id="_sBSpoCdLEfCbG6XKvKQTYQ" name="OrderData" uniformResourceIdentifier="call/order/data">
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_79b9QCdLEfCbG6XKvKQTYQ" name="Item">
+            <featureConcept href="voucher.core#//@domainModel/@domainElements.23"/>
+          </subViewComponentParts>
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_6GjCMCdNEfCwucEL_qXcmw" name="Quantity">
+            <featureConcept href="admindashboard.core#//@domainModel/@domainElements.40"/>
+          </subViewComponentParts>
+        </viewComponentParts>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_sDbQQCdOEfCwucEL_qXcmw" name="OrderModifyPage" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/order/modify"/>
+        <viewElements xsi:type="ext:Form" id="_wTkPwCdOEfCwucEL_qXcmw" name="ModifyOrderItemList">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_yGih4CdREfCwucEL_qXcmw" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_6BipkCdREfCwucEL_qXcmw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_DWyCACdPEfCwucEL_qXcmw" name="Item">
+            <annotations text="Required"/>
+            <type xsi:type="uml:Class" href="../restaurant/restaurant.uml#_jCZNgCHQEfCNcqLFs-Q7tw"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_cDRw8CdPEfCwucEL_qXcmw" name="Quantity">
+            <annotations text="Required"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_nPGwMCdPEfCwucEL_qXcmw" name="OrderSummaryPage" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.1/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/order/summary"/>
+        <viewElements xsi:type="ext:Details" id="_ya4FECdPEfCwucEL_qXcmw" name="OrderSummary">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_eleEECdTEfCwucEL_qXcmw" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_jwzggCdTEfCwucEL_qXcmw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:VisualizationAttribute" id="_3cI_gCdPEfCwucEL_qXcmw" name="Item">
+            <featureConcept href="menu.core#//@domainModel/@domainElements.21"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="core:VisualizationAttribute" id="_5FQSYCdPEfCwucEL_qXcmw" name="Quantity">
+            <featureConcept href="promo.core#//@domainModel/@domainElements.24"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="core:VisualizationAttribute" id="_7Qok0CdPEfCwucEL_qXcmw" name="TotalPrice">
+            <featureConcept href="main.core#//@domainModel/@domainElements.12"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <actions id="_Y_IOACdQEfCwucEL_qXcmw" name="Save Order Item List" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_k6StkCdSEfCwucEL_qXcmw">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_qfA6YCdSEfCwucEL_qXcmw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </actionEvents>
+      </actions>
+      <actions id="_aFkRoCdQEfCwucEL_qXcmw" name="Create Order Summary" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_bSt54CdTEfCwucEL_qXcmw">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_cijxICdTEfCwucEL_qXcmw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3"/>
+        </actionEvents>
+      </actions>
+      <actions id="_ayTb0CdQEfCwucEL_qXcmw" name="Create Order" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <annotations text="Navigate to Payment Page"/>
+        <actionEvents id="_33x10CdTEfCwucEL_qXcmw" name="Navigate To Payment Page"/>
+      </actions>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
   <domainModel id="_TcWlYSa1EfCx0K1dJzpb_g">
     <domainElements xsi:type="core:UMLBehavioralFeature" id="_Tcz4YCa1EfCx0K1dJzpb_g" name="manageEditMenu">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_UVyYsCHcEfC_nNkev7yNLQ"/>
