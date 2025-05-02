@@ -1,5 +1,90 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_pFm3sCazEfC9gtY651zSyg">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_pFm3sCazEfC9gtY651zSyg">
+  <interactionFlowModel id="_nej78CdkEfCfssKSNh7cjw">
+    <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_ne4sECdkEfCfssKSNh7cjw" name="Payment">
+      <annotations text="/:receiptId"/>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="__DCS4CdkEfCfssKSNh7cjw" name="Checkout Details Page">
+        <annotations text="/:orderId/payment"/>
+        <viewElements xsi:type="ext:List" id="_C9evMCdlEfCfssKSNh7cjw" name="Checkout Details">
+          <viewComponentParts xsi:type="core:DataBinding" id="_H_KgYCdlEfCfssKSNh7cjw" name="Data Binding" uniformResourceIdentifier="/:paymentId">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_CePZACdmEfCfssKSNh7cjw" name="orderId">
+              <featureConcept href="voucher.core#//@domainModel/@domainElements.18"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_VQ0HMCdmEfCfssKSNh7cjw" name="total">
+              <featureConcept href="voucher.core#//@domainModel/@domainElements.56"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:Form" id="_jea1YCdmEfCfssKSNh7cjw" name="Payment Method Select">
+          <parameters id="_ocjCoCduEfCfssKSNh7cjw" name="paymentId" direction="out">
+            <type xsi:type="uml:DataType" href="../restaurant/restaurant.uml#_J8IV4CHfEfC_nNkev7yNLQ"/>
+          </parameters>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_n7mV4CdnEfCfssKSNh7cjw" name="Proceed">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_blrasCdqEfCfssKSNh7cjw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_lh2swCdmEfCfssKSNh7cjw" name="paymentMethod">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_M4O2MCdnEfCfssKSNh7cjw" name="paymentMethod">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_KrRZ8CdoEfCfssKSNh7cjw" name="Input Payment Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/:paymentId"/>
+        <viewElements xsi:type="ext:Form" id="_QhrMoCdoEfCfssKSNh7cjw" name="Form">
+          <parameters id="_0_TYkCduEfCfssKSNh7cjw" name="receiptId" direction="out">
+            <type xsi:type="uml:DataType" href="../restaurant/restaurant.uml#_J8IV4CHfEfC_nNkev7yNLQ"/>
+          </parameters>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_qSGL0CdqEfCfssKSNh7cjw" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_8bhPUCdqEfCfssKSNh7cjw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_YZgEgCdoEfCfssKSNh7cjw" name="Details">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_gLnV8CdoEfCfssKSNh7cjw" name="Details">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_xS-fgCdoEfCfssKSNh7cjw" name="create paymentId and save paymentMethod" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_dgT7YCdqEfCfssKSNh7cjw">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_fBSl8CdqEfCfssKSNh7cjw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
+            <parameterBindingGroup id="_qikJYCdtEfCfssKSNh7cjw">
+              <parameterBindings id="_tiznQCdtEfCfssKSNh7cjw" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_zM91ECdqEfCfssKSNh7cjw" name="Process payment, create new receipt" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_9oKBkCdqEfCfssKSNh7cjw">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_MptVMCdrEfCfssKSNh7cjw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
+            <parameterBindingGroup id="_aNPEQCduEfCfssKSNh7cjw">
+              <parameterBindings id="_bNLeUCduEfCfssKSNh7cjw" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_FudaUCdrEfCfssKSNh7cjw" name="Receipt Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@actionEvents.0/@outInteractionFlows.0">
+        <viewElements xsi:type="ext:List" id="_IlWH4CdrEfCfssKSNh7cjw" name="Receipt Details">
+          <viewComponentParts xsi:type="core:DataBinding" id="_P-mNYCdrEfCfssKSNh7cjw" name="Receipt Data" uniformResourceIdentifier="/:receiptId">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_XhldsCdrEfCfssKSNh7cjw" name="paidAt">
+              <featureConcept href="voucher.core#//@domainModel/@domainElements.63"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_xWzIMCdrEfCfssKSNh7cjw" name="paidAmount">
+              <featureConcept href="voucher.core#//@domainModel/@domainElements.64"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_4EfvQCdrEfCfssKSNh7cjw" name="paymentMethod">
+              <featureConcept href="voucher.core#//@domainModel/@domainElements.55"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
   <domainModel id="_pFm3sSazEfC9gtY651zSyg">
     <domainElements xsi:type="core:UMLBehavioralFeature" id="_pF2IQCazEfC9gtY651zSyg" name="manageEditMenu">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_UVyYsCHcEfC_nNkev7yNLQ"/>
