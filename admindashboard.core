@@ -1,262 +1,400 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_bv9FMCazEfC9gtY651zSyg">
-  <domainModel id="_bv9FMSazEfC9gtY651zSyg">
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwOyACazEfC9gtY651zSyg" name="manageEditMenu">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_pg-n8CqLEfCzvIuk6NYakQ">
+  <interactionFlowModel id="_t3II0CqLEfCzvIuk6NYakQ">
+    <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_t3KlECqLEfCzvIuk6NYakQ" name="AdminDashboard">
+      <inputPorts id="_OWvGYCqaEfCF8cKgbo0D-Q" name="Input Port">
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+      </inputPorts>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_v2VngCqLEfCzvIuk6NYakQ" name="Admin Dashboard Page">
+        <annotations text="/dashboard"/>
+        <viewElementEvents id="_o3YmcCqNEfCzvIuk6NYakQ" name="Manage Menu">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_qsfG4CqNEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_vMFg4CqcEfCF8cKgbo0D-Q" name="List Admin">
+          <viewComponentParts xsi:type="core:DataBinding" id="_wghkQCqcEfCF8cKgbo0D-Q" name="Data Admin" uniformResourceIdentifier="getAdminData">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_2LrJMCqcEfCF8cKgbo0D-Q" name="username">
+              <featureConcept href="voucher.core#//@domainModel/@domainElements.3"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_wfQBoCqLEfCzvIuk6NYakQ" name="Menu Manager Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actions.0/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actions.1/@actionEvents.0/@outInteractionFlows.0">
+        <viewElementEvents id="_dpo7oCqNEfCzvIuk6NYakQ" name="Create New Menu">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_iWPNoCqNEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_znp9ACqLEfCzvIuk6NYakQ" name="List Menu">
+          <viewElementEvents id="_SYjMcCqOEfCzvIuk6NYakQ" name="Edit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_PP6VoCqQEfCzvIuk6NYakQ"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_xlBIICqREfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1">
+              <parameterBindingGroup id="_0VRpQCqREfCzvIuk6NYakQ">
+                <parameterBindings id="_41K8ACqREfCzvIuk6NYakQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="_UB2skCqOEfCzvIuk6NYakQ" name="Delete">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_afycgCqSEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actions.1"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_0jcP0CqLEfCzvIuk6NYakQ" name="Data Menu" uniformResourceIdentifier="getDataMenu">
+            <parameters id="_rVV50CqREfCzvIuk6NYakQ" name="menu_id">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </parameters>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_1kJe4CqLEfCzvIuk6NYakQ" name="name">
+              <featureConcept href="order.core#//@domainModel/@domainElements.10"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_11nCUCqLEfCzvIuk6NYakQ" name="desc">
+              <featureConcept href="voucher.core#//@domainModel/@domainElements.11"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_2SYd4CqLEfCzvIuk6NYakQ" name="price">
+              <featureConcept href="voucher.core#//@domainModel/@domainElements.12"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_3znnICqLEfCzvIuk6NYakQ" name="category">
+              <featureConcept href="voucher.core#//@domainModel/@domainElements.13"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:Form" id="_n3fvYCqQEfCzvIuk6NYakQ" name="Edit Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
+          <parameters id="_uRNqgCqQEfCzvIuk6NYakQ" name="menu_id">
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </parameters>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_Np-nsCqSEfCzvIuk6NYakQ" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_QVqx4CqSEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actions.0"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_wU-5ECqQEfCzvIuk6NYakQ" name="Data Menu" uniformResourceIdentifier="getDataMenu">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_zsjR0CqQEfCzvIuk6NYakQ" name="name">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_2T2EMCqQEfCzvIuk6NYakQ" name="name">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_GCo4UCqREfCzvIuk6NYakQ" name="desc">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_JWAGgCqREfCzvIuk6NYakQ" name="desc">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_SxH9ICqREfCzvIuk6NYakQ" name="price">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_WJXEQCqREfCzvIuk6NYakQ" name="price">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_ZMWUICqREfCzvIuk6NYakQ" name="category">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_cgHK8CqREfCzvIuk6NYakQ" name="category">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+        <actions id="_PeYkkCqSEfCzvIuk6NYakQ" name="Update Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+          <annotations text="PUT"/>
+          <actionEvents id="_ROTDACqSEfCzvIuk6NYakQ">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_R_6GICqSEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+          </actionEvents>
+        </actions>
+        <actions id="_XwHKMCqSEfCzvIuk6NYakQ" name="Delete Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+          <annotations text="DELETE"/>
+          <actionEvents id="_ecgwwCqSEfCzvIuk6NYakQ">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_ffU4oCqSEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+          </actionEvents>
+        </actions>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_M7Cs0CqMEfCzvIuk6NYakQ" name="Create New Menu Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <viewElements xsi:type="ext:Form" id="_QM--sCqMEfCzvIuk6NYakQ" name="Create New Menu">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_yveiYCqMEfCzvIuk6NYakQ" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_7-X64CqMEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_UMNNUCqMEfCzvIuk6NYakQ" name="menuName">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_sJOYYCqSEfCzvIuk6NYakQ" name="menuName">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_Umy3kCqMEfCzvIuk6NYakQ" name="menuDesc">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_vQdPECqSEfCzvIuk6NYakQ" name="menuDesc">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_U2PBwCqMEfCzvIuk6NYakQ" name="menuPrice">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_0tnbUCqSEfCzvIuk6NYakQ" name="menuPrice">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_VH71wCqMEfCzvIuk6NYakQ" name="menuCategory">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_4uNi8CqSEfCzvIuk6NYakQ" name="menuCategory">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_6dLN4CqMEfCzvIuk6NYakQ" name="Save Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_CCR-ECqNEfCzvIuk6NYakQ">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_DXbMECqNEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
+  <domainModel id="_pg-n8SqLEfCzvIuk6NYakQ">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHK0CqLEfCzvIuk6NYakQ" name="manageEditMenu">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_UVyYsCHcEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_bwQAICazEfC9gtY651zSyg" name="AdminDashboardImpl">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_phHx4CqLEfCzvIuk6NYakQ" name="AdminDashboardImpl">
       <classifier xsi:type="uml:Class" href="../restaurant/restaurant.uml#_iG-WICBnEfCOcbW_joQElA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQAISazEfC9gtY651zSyg" name="test">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phHx4SqLEfCzvIuk6NYakQ" name="test">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_rag-ECBnEfCOcbW_joQElA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQAIiazEfC9gtY651zSyg" name="username">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phHx4iqLEfCzvIuk6NYakQ" name="username">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_t5bQgCBnEfCOcbW_joQElA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQAIyazEfC9gtY651zSyg" name="password">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phHx4yqLEfCzvIuk6NYakQ" name="password">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_PNLJICBoEfCOcbW_joQElA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAJCazEfC9gtY651zSyg" name="manageEditMenu">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx5CqLEfCzvIuk6NYakQ" name="manageEditMenu">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_pcXZ4CBoEfCOcbW_joQElA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAJSazEfC9gtY651zSyg" name="createMenu">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx5SqLEfCzvIuk6NYakQ" name="createMenu">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_KxN-ECHPEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAJiazEfC9gtY651zSyg" name="deleteMenu">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx5iqLEfCzvIuk6NYakQ" name="deleteMenu">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_gTBdMCHQEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAJyazEfC9gtY651zSyg" name="getPrice">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx5yqLEfCzvIuk6NYakQ" name="getPrice">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_hRnzcCHQEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_bwQAKCazEfC9gtY651zSyg" name="MenuImpl">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_phHx6CqLEfCzvIuk6NYakQ" name="MenuImpl">
       <classifier xsi:type="uml:Class" href="../restaurant/restaurant.uml#_jCZNgCHQEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQAKSazEfC9gtY651zSyg" name="name">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phHx6SqLEfCzvIuk6NYakQ" name="name">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_9Cw_ICHQEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQAKiazEfC9gtY651zSyg" name="desc">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phHx6iqLEfCzvIuk6NYakQ" name="desc">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_AGhEACHREfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQAKyazEfC9gtY651zSyg" name="price">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phHx6yqLEfCzvIuk6NYakQ" name="price">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_CghoUCHREfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQALCazEfC9gtY651zSyg" name="category">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phHx7CqLEfCzvIuk6NYakQ" name="category">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_Tb8xMCHdEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQALSazEfC9gtY651zSyg" name="createMenu">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx7SqLEfCzvIuk6NYakQ" name="createMenu">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_wMjhsCHQEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQALiazEfC9gtY651zSyg" name="deleteMenu">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx7iqLEfCzvIuk6NYakQ" name="deleteMenu">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_xAA-8CHQEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQALyazEfC9gtY651zSyg" name="getPrice">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx7yqLEfCzvIuk6NYakQ" name="getPrice">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_xwxtgCHQEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAMCazEfC9gtY651zSyg" name="addItem">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx8CqLEfCzvIuk6NYakQ" name="addItem">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_ez5M8CH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAMSazEfC9gtY651zSyg" name="removeItem">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx8SqLEfCzvIuk6NYakQ" name="removeItem">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_g7qKsCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAMiazEfC9gtY651zSyg" name="getItems">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx8iqLEfCzvIuk6NYakQ" name="getItems">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_hw4igCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAMyazEfC9gtY651zSyg" name="getSubtotal">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx8yqLEfCzvIuk6NYakQ" name="getSubtotal">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_iZHAICH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQANCazEfC9gtY651zSyg" name="incQty">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx9CqLEfCzvIuk6NYakQ" name="incQty">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_jLBlQCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQANSazEfC9gtY651zSyg" name="decQTy">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx9SqLEfCzvIuk6NYakQ" name="decQTy">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_kQpJgCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQANiazEfC9gtY651zSyg" name="getOrderId">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phHx9iqLEfCzvIuk6NYakQ" name="getOrderId">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_lE3bwCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQANyazEfC9gtY651zSyg" name="getCreatedAt">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIY8CqLEfCzvIuk6NYakQ" name="getCreatedAt">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_l8zwYCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_bwQAOCazEfC9gtY651zSyg" name="OrderImpl">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_phIY8SqLEfCzvIuk6NYakQ" name="OrderImpl">
       <classifier xsi:type="uml:Class" href="../restaurant/restaurant.uml#_6OfEMCHREfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQAOSazEfC9gtY651zSyg" name="orderId">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIY8iqLEfCzvIuk6NYakQ" name="orderId">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#__oOJACHREfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQAOiazEfC9gtY651zSyg" name="createdAt">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIY8yqLEfCzvIuk6NYakQ" name="createdAt">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_DxNXoCHSEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQAOyazEfC9gtY651zSyg" name="orderItems">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIY9CqLEfCzvIuk6NYakQ" name="orderItems">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_7cWTkCHTEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQAPCazEfC9gtY651zSyg" name="orderitemimpl">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIY9SqLEfCzvIuk6NYakQ" name="orderitemimpl">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#__YR9oiHTEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAPSazEfC9gtY651zSyg" name="addItem">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIY9iqLEfCzvIuk6NYakQ" name="addItem">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_pBzLYCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAPiazEfC9gtY651zSyg" name="removeItem">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIY9yqLEfCzvIuk6NYakQ" name="removeItem">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_pkzx0CH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAPyazEfC9gtY651zSyg" name="getItems">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIY-CqLEfCzvIuk6NYakQ" name="getItems">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_qO7F0CH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAQCazEfC9gtY651zSyg" name="getSubtotal">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIY-SqLEfCzvIuk6NYakQ" name="getSubtotal">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_q8MbgCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAQSazEfC9gtY651zSyg" name="incQty">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIY-iqLEfCzvIuk6NYakQ" name="incQty">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_rr7PUCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAQiazEfC9gtY651zSyg" name="decQty">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIY-yqLEfCzvIuk6NYakQ" name="decQty">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_sZnbwCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQAQyazEfC9gtY651zSyg" name="getOrderId">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIY_CqLEfCzvIuk6NYakQ" name="getOrderId">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_tCeykCH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQARCazEfC9gtY651zSyg" name="getCreatedAt">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIY_SqLEfCzvIuk6NYakQ" name="getCreatedAt">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_tsNFACH1EfCHXrqDtvt3yA"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_bwQARSazEfC9gtY651zSyg" name="OrderItemImpl">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_phIY_iqLEfCzvIuk6NYakQ" name="OrderItemImpl">
       <classifier xsi:type="uml:Class" href="../restaurant/restaurant.uml#_yy8DMCHSEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQARiazEfC9gtY651zSyg" name="item">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIY_yqLEfCzvIuk6NYakQ" name="item">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_5uuJkCHSEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQARyazEfC9gtY651zSyg" name="quantity">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZACqLEfCzvIuk6NYakQ" name="quantity">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_wf-QICHUEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQASCazEfC9gtY651zSyg" name="reducePrice">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZASqLEfCzvIuk6NYakQ" name="reducePrice">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_qyahUCHdEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQASSazEfC9gtY651zSyg" name="calculatePrice">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZAiqLEfCzvIuk6NYakQ" name="calculatePrice">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_wzTswCHdEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_bwQASiazEfC9gtY651zSyg" name="PromoImpl">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_phIZAyqLEfCzvIuk6NYakQ" name="PromoImpl">
       <classifier xsi:type="uml:Class" href="../restaurant/restaurant.uml#_LS11sCHVEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQASyazEfC9gtY651zSyg" name="eventName">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZBCqLEfCzvIuk6NYakQ" name="eventName">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_NxpacCHVEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQATCazEfC9gtY651zSyg" name="eventStartDate">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZBSqLEfCzvIuk6NYakQ" name="eventStartDate">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_SFIo4CHVEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQATSazEfC9gtY651zSyg" name="eventFinishDate">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZBiqLEfCzvIuk6NYakQ" name="eventFinishDate">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_UxQ38CHVEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQATiazEfC9gtY651zSyg" name="menuPromo">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZByqLEfCzvIuk6NYakQ" name="menuPromo">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_9tpcQCHdEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQATyazEfC9gtY651zSyg" name="reducePrice">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZCCqLEfCzvIuk6NYakQ" name="reducePrice">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_ESnlICHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQnMCazEfC9gtY651zSyg" name="calculatePrice">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZCSqLEfCzvIuk6NYakQ" name="calculatePrice">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_E5SjkCHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQnMSazEfC9gtY651zSyg" name="createVoucher">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZCiqLEfCzvIuk6NYakQ" name="createVoucher">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_oXFR4CHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQnMiazEfC9gtY651zSyg" name="deleteVoucher">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZCyqLEfCzvIuk6NYakQ" name="deleteVoucher">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_ptGCkCHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQnMyazEfC9gtY651zSyg" name="calculatePrice">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZDCqLEfCzvIuk6NYakQ" name="calculatePrice">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_sOZhsCHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_bwQnNCazEfC9gtY651zSyg" name="VoucherImpl">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_phIZDSqLEfCzvIuk6NYakQ" name="VoucherImpl">
       <classifier xsi:type="uml:Class" href="../restaurant/restaurant.uml#_jmVfsCHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQnNSazEfC9gtY651zSyg" name="id">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZDiqLEfCzvIuk6NYakQ" name="id">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_xU5hcCHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQnNiazEfC9gtY651zSyg" name="voucherName">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZDyqLEfCzvIuk6NYakQ" name="voucherName">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_zx-A0CHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQnNyazEfC9gtY651zSyg" name="voucherDescription">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZECqLEfCzvIuk6NYakQ" name="voucherDescription">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_03-moCHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQnOCazEfC9gtY651zSyg" name="voucherType">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZESqLEfCzvIuk6NYakQ" name="voucherType">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_2xIgoCHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQnOSazEfC9gtY651zSyg" name="code">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZEiqLEfCzvIuk6NYakQ" name="code">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_5DBqwCHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQnOiazEfC9gtY651zSyg" name="minPurchaseAmount">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZEyqLEfCzvIuk6NYakQ" name="minPurchaseAmount">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_6EGGMCHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQnOyazEfC9gtY651zSyg" name="quota">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZFCqLEfCzvIuk6NYakQ" name="quota">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_7nP7ACHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQnPCazEfC9gtY651zSyg" name="startDate">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZFSqLEfCzvIuk6NYakQ" name="startDate">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_-JOIgCHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwQnPSazEfC9gtY651zSyg" name="endDate">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZFiqLEfCzvIuk6NYakQ" name="endDate">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#__6NlACHeEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQnPiazEfC9gtY651zSyg" name="createVoucher">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZFyqLEfCzvIuk6NYakQ" name="createVoucher">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_CNOJcCHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQnPyazEfC9gtY651zSyg" name="deleteVoucher">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZGCqLEfCzvIuk6NYakQ" name="deleteVoucher">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_DY5SYCHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQnQCazEfC9gtY651zSyg" name="calculatePrice">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZGSqLEfCzvIuk6NYakQ" name="calculatePrice">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_EVfdgCHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQnQSazEfC9gtY651zSyg" name="calculateTotal">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZGiqLEfCzvIuk6NYakQ" name="calculateTotal">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_perWoCHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwQnQiazEfC9gtY651zSyg" name="processPayment">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phIZGyqLEfCzvIuk6NYakQ" name="processPayment">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_qjAhcCHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_bwROQCazEfC9gtY651zSyg" name="PaymentMethodImpl">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_phIZHCqLEfCzvIuk6NYakQ" name="PaymentMethodImpl">
       <classifier xsi:type="uml:Class" href="../restaurant/restaurant.uml#_tWShYCHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROQSazEfC9gtY651zSyg" name="paymentId">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZHSqLEfCzvIuk6NYakQ" name="paymentId">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_vpzcICHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROQiazEfC9gtY651zSyg" name="createdAt">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZHiqLEfCzvIuk6NYakQ" name="createdAt">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_0VaPoCHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROQyazEfC9gtY651zSyg" name="paymentMethod">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZHyqLEfCzvIuk6NYakQ" name="paymentMethod">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_3paXACHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwRORCazEfC9gtY651zSyg" name="total">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phIZICqLEfCzvIuk6NYakQ" name="total">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_5xzm4CHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwRORSazEfC9gtY651zSyg" name="receipt">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phJAACqLEfCzvIuk6NYakQ" name="receipt">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_8OsgECHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwRORiazEfC9gtY651zSyg" name="orderId">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phJAASqLEfCzvIuk6NYakQ" name="orderId">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_ffxyoCHhEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwRORyazEfC9gtY651zSyg" name="calculateTotal">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phJAAiqLEfCzvIuk6NYakQ" name="calculateTotal">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#__QmK0CHfEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_bwROSCazEfC9gtY651zSyg" name="processPayment">
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_phJAAyqLEfCzvIuk6NYakQ" name="processPayment">
       <behavioralFeature xsi:type="uml:Operation" href="../restaurant/restaurant.uml#_AQ5KMCHgEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_bwROSSazEfC9gtY651zSyg" name="Receipt">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_phJABCqLEfCzvIuk6NYakQ" name="Receipt">
       <classifier xsi:type="uml:Class" href="../restaurant/restaurant.uml#_Fo3UcCHgEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROSiazEfC9gtY651zSyg" name="receiptId">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phJABSqLEfCzvIuk6NYakQ" name="receiptId">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_IkA28CHgEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROSyazEfC9gtY651zSyg" name="orderId">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phJABiqLEfCzvIuk6NYakQ" name="orderId">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_Ltty0CHgEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROTCazEfC9gtY651zSyg" name="paidAt">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phJAByqLEfCzvIuk6NYakQ" name="paidAt">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_ORjokCHgEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROTSazEfC9gtY651zSyg" name="paidAmount">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phJACCqLEfCzvIuk6NYakQ" name="paidAmount">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_QuxR4CHgEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROTiazEfC9gtY651zSyg" name="paymentMethod">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phJACSqLEfCzvIuk6NYakQ" name="paymentMethod">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_TrwncCHgEfC_nNkev7yNLQ"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROTyazEfC9gtY651zSyg" name="paymentmethodimpl">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phJACiqLEfCzvIuk6NYakQ" name="paymentmethodimpl">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_iiKgMCawEfC9gtY651zSyg"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROUCazEfC9gtY651zSyg" name="orderimpl">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phJACyqLEfCzvIuk6NYakQ" name="orderimpl">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#__YSksSHTEfCNcqLFs-Q7tw"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_bwROUSazEfC9gtY651zSyg" name="receipt">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_phJADCqLEfCzvIuk6NYakQ" name="receipt">
       <structuralFeature xsi:type="uml:Property" href="../restaurant/restaurant.uml#_iiOxoCawEfC9gtY651zSyg"/>
     </domainElements>
   </domainModel>

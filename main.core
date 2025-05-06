@@ -12,20 +12,11 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_3wAvACdVEfCZsujHyoUQXg" name="Voucher">
-      <annotations text="Voucher"/>
-      <viewElementEvents id="_52tVwCdVEfCZsujHyoUQXg" name="Voucher">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_lHOZhydWEfCZsujHyoUQXg">
-          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="voucher.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
-        </outInteractionFlows>
-      </viewElementEvents>
-    </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_zfeSoCdwEfCkmNamYsUjng" name="Promo">
-      <annotations text="Promo"/>
-      <viewElementEvents id="_9KcjICdwEfCkmNamYsUjng" name="ViewElement Event">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_GMr_sCdxEfCkmNamYsUjng"/>
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_2XnSgCdyEfCFEMmZjFpbcQ">
-          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="promo.core#//@interactionFlowModel/@interactionFlowModelElements.1/@interactionFlowModelElement.0"/>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_CNAb0CqXEfCzvIuk6NYakQ" name="AdminDashboard">
+      <annotations text="AdminDashboard"/>
+      <viewElementEvents id="_UVTWkCqaEfCF8cKgbo0D-Q" name="ViewElement Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_VCE9ACqaEfCF8cKgbo0D-Q">
+          <targetInteractionFlowElement xsi:type="core:PortDefinition" href="admindashboard.core#//@interactionFlowModel/@interactionFlowModelElements.0/@inputPorts.0"/>
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>

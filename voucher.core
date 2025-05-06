@@ -6,7 +6,6 @@
         <annotations text="/voucher"/>
         <viewElements xsi:type="core:ViewContainer" id="_78zz8CHhEfCHXrqDtvt3yA" name="Vouchers Page">
           <inInteractionFlows xsi:type="core:NavigationFlow" href="Main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
-          <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
           <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actionEvents.0/@outInteractionFlows.0"/>
           <viewElements xsi:type="ext:List" id="_BILlQCHlEfCHXrqDtvt3yA" name="Table Vouchers">
             <viewElementEvents id="_bXeHMCHmEfCHXrqDtvt3yA" name="Enter Code">
