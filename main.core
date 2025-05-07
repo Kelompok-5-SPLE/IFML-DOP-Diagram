@@ -14,9 +14,9 @@
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_CNAb0CqXEfCzvIuk6NYakQ" name="AdminDashboard">
       <annotations text="AdminDashboard"/>
-      <viewElementEvents id="_UVTWkCqaEfCF8cKgbo0D-Q" name="ViewElement Event">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_VCE9ACqaEfCF8cKgbo0D-Q">
-          <targetInteractionFlowElement xsi:type="core:PortDefinition" href="admindashboard.core#//@interactionFlowModel/@interactionFlowModelElements.0/@inputPorts.0"/>
+      <viewElementEvents id="_UVTWkCqaEfCF8cKgbo0D-Q" name="AdminDashboard">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_z8UVcCs7EfCYyZw5wqV4gw">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="admindashboard.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>

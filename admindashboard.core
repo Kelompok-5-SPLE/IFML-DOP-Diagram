@@ -4,9 +4,12 @@
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_t3KlECqLEfCzvIuk6NYakQ" name="AdminDashboard">
       <inputPorts id="_OWvGYCqaEfCF8cKgbo0D-Q" name="Input Port">
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.1"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.2"/>
       </inputPorts>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_v2VngCqLEfCzvIuk6NYakQ" name="Admin Dashboard Page">
         <annotations text="/dashboard"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElementEvents id="_o3YmcCqNEfCzvIuk6NYakQ" name="Manage Menu">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_qsfG4CqNEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
         </viewElementEvents>
@@ -18,16 +21,21 @@
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_wfQBoCqLEfCzvIuk6NYakQ" name="Menu Manager Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actions.0/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actions.1/@actionEvents.0/@outInteractionFlows.0">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_wfQBoCqLEfCzvIuk6NYakQ" name="Menu Manager Page">
+        <annotations text="/menumanager"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actions.1/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.3"/>
         <viewElementEvents id="_dpo7oCqNEfCzvIuk6NYakQ" name="Create New Menu">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_iWPNoCqNEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
         </viewElementEvents>
-        <viewElements xsi:type="ext:List" id="_znp9ACqLEfCzvIuk6NYakQ" name="List Menu">
+        <viewElements xsi:type="ext:List" id="_znp9ACqLEfCzvIuk6NYakQ" name="Table Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actions.0/@actionEvents.0/@outInteractionFlows.0">
           <viewElementEvents id="_SYjMcCqOEfCzvIuk6NYakQ" name="Edit">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_PP6VoCqQEfCzvIuk6NYakQ"/>
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_xlBIICqREfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_xlBIICqREfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.1">
               <parameterBindingGroup id="_0VRpQCqREfCzvIuk6NYakQ">
-                <parameterBindings id="_41K8ACqREfCzvIuk6NYakQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1/@parameters.0"/>
+                <parameterBindings id="_41K8ACqREfCzvIuk6NYakQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewComponentParts.0/@parameters.0"/>
               </parameterBindingGroup>
             </outInteractionFlows>
           </viewElementEvents>
@@ -52,44 +60,10 @@
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
-        <viewElements xsi:type="ext:Form" id="_n3fvYCqQEfCzvIuk6NYakQ" name="Edit Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
-          <parameters id="_uRNqgCqQEfCzvIuk6NYakQ" name="menu_id">
-            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </parameters>
-          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_Np-nsCqSEfCzvIuk6NYakQ" name="Submit">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_QVqx4CqSEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actions.0"/>
-          </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_wU-5ECqQEfCzvIuk6NYakQ" name="Data Menu" uniformResourceIdentifier="getDataMenu">
-            <subViewComponentParts xsi:type="ext:SimpleField" id="_zsjR0CqQEfCzvIuk6NYakQ" name="name">
-              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_2T2EMCqQEfCzvIuk6NYakQ" name="name">
-                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </subViewComponentParts>
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </subViewComponentParts>
-            <subViewComponentParts xsi:type="ext:SimpleField" id="_GCo4UCqREfCzvIuk6NYakQ" name="desc">
-              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_JWAGgCqREfCzvIuk6NYakQ" name="desc">
-                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </subViewComponentParts>
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </subViewComponentParts>
-            <subViewComponentParts xsi:type="ext:SimpleField" id="_SxH9ICqREfCzvIuk6NYakQ" name="price">
-              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_WJXEQCqREfCzvIuk6NYakQ" name="price">
-                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-              </subViewComponentParts>
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            </subViewComponentParts>
-            <subViewComponentParts xsi:type="ext:SimpleField" id="_ZMWUICqREfCzvIuk6NYakQ" name="category">
-              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_cgHK8CqREfCzvIuk6NYakQ" name="category">
-                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </subViewComponentParts>
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-        </viewElements>
-        <actions id="_PeYkkCqSEfCzvIuk6NYakQ" name="Update Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <actions id="_PeYkkCqSEfCzvIuk6NYakQ" name="Update Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
           <annotations text="PUT"/>
           <actionEvents id="_ROTDACqSEfCzvIuk6NYakQ">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_R_6GICqSEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_R_6GICqSEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0"/>
           </actionEvents>
         </actions>
         <actions id="_XwHKMCqSEfCzvIuk6NYakQ" name="Delete Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
@@ -100,6 +74,7 @@
         </actions>
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_M7Cs0CqMEfCzvIuk6NYakQ" name="Create New Menu Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/create"/>
         <viewElements xsi:type="ext:Form" id="_QM--sCqMEfCzvIuk6NYakQ" name="Create New Menu">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_yveiYCqMEfCzvIuk6NYakQ" name="Submit">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_7-X64CqMEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
@@ -136,6 +111,84 @@
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_DXbMECqNEfCzvIuk6NYakQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
         </actionEvents>
       </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_hEonICsiEfCYyZw5wqV4gw" name="Update Menu Page">
+        <annotations text="/editmenu"/>
+        <viewElements xsi:type="ext:Form" id="_n3fvYCqQEfCzvIuk6NYakQ" name="Edit Menu">
+          <parameters id="_uRNqgCqQEfCzvIuk6NYakQ" name="menu_id">
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </parameters>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_Np-nsCqSEfCzvIuk6NYakQ" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_QVqx4CqSEfCzvIuk6NYakQ"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_wU-5ECqQEfCzvIuk6NYakQ" name="Data Menu" uniformResourceIdentifier="getDataMenu">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_zsjR0CqQEfCzvIuk6NYakQ" name="name">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_2T2EMCqQEfCzvIuk6NYakQ" name="name">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_GCo4UCqREfCzvIuk6NYakQ" name="desc">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_JWAGgCqREfCzvIuk6NYakQ" name="desc">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_SxH9ICqREfCzvIuk6NYakQ" name="price">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_WJXEQCqREfCzvIuk6NYakQ" name="price">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_ZMWUICqREfCzvIuk6NYakQ" name="category">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_cgHK8CqREfCzvIuk6NYakQ" name="category">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:Form" id="_puqYACsiEfCYyZw5wqV4gw" name="Edit Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
+          <parameters id="_uRNqgCqQEfCzvIuk6NYakQ" name="menu_id">
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </parameters>
+          <parameters id="_0nuMQCsiEfCYyZw5wqV4gw" name="menu_id">
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </parameters>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_yCbTECskEfCYyZw5wqV4gw" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_CY7ncCslEfCYyZw5wqV4gw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actions.0"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_86c3cCsiEfCYyZw5wqV4gw" name="Data Menu" uniformResourceIdentifier="getDataMenu">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_RrW6kCsjEfCYyZw5wqV4gw" name="name">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_ORNScCskEfCYyZw5wqV4gw" name="name">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_YjTp0CsjEfCYyZw5wqV4gw" name="desc">
+              <parameters xsi:type="ext:IFMLSlot" id="_ORNScCskEfCYyZw5wqV4gw" name="name">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </parameters>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_dVDFECskEfCYyZw5wqV4gw" name="desc">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_ay-mYCsjEfCYyZw5wqV4gw" name="price">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_k6-UoCskEfCYyZw5wqV4gw" name="price">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_fMlD4CsjEfCYyZw5wqV4gw" name="category">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_q0JHcCskEfCYyZw5wqV4gw" name="category">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_7uK_oCskEfCYyZw5wqV4gw" name="Update Menu"/>
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_pg-n8SqLEfCzvIuk6NYakQ">
