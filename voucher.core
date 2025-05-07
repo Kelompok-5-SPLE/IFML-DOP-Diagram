@@ -2,55 +2,55 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_R5I90CHhEfCHXrqDtvt3yA">
   <interactionFlowModel id="_0C0Y4CHhEfCHXrqDtvt3yA">
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_CC4-8CdUEfCZsujHyoUQXg" name="Voucher">
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_0DJJACHhEfCHXrqDtvt3yA" name="Voucher Page">
-        <annotations text="/voucher"/>
-        <viewElements xsi:type="core:ViewContainer" id="_78zz8CHhEfCHXrqDtvt3yA" name="Vouchers Page">
-          <inInteractionFlows xsi:type="core:NavigationFlow" href="Main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
-          <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@actionEvents.0/@outInteractionFlows.0"/>
-          <viewElements xsi:type="ext:List" id="_BILlQCHlEfCHXrqDtvt3yA" name="Table Vouchers">
-            <viewElementEvents id="_bXeHMCHmEfCHXrqDtvt3yA" name="Enter Code">
-              <outInteractionFlows xsi:type="core:NavigationFlow" id="_HbJGMCHnEfCHXrqDtvt3yA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1">
-                <parameterBindingGroup id="__UuTECdUEfCZsujHyoUQXg">
-                  <parameterBindings id="_EcbMsCdVEfCZsujHyoUQXg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@parameters.0"/>
-                </parameterBindingGroup>
-              </outInteractionFlows>
-            </viewElementEvents>
-            <viewComponentParts xsi:type="core:DataBinding" id="_SNA_QCHlEfCHXrqDtvt3yA" name="Vouchers Data" uniformResourceIdentifier="/api/voucher/get">
-              <parameters id="_w188YCdUEfCZsujHyoUQXg" name="id" direction="inout">
-                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </parameters>
-              <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_DYj3ACHmEfCHXrqDtvt3yA" name="voucherDescription" featureConcept="//@domainModel/@domainElements.40"/>
-            </viewComponentParts>
-            <viewComponentParts xsi:type="core:VisualizationAttribute" id="_ZfZnwCHlEfCHXrqDtvt3yA" name="voucherName" featureConcept="//@domainModel/@domainElements.39"/>
-          </viewElements>
-        </viewElements>
-        <viewElements xsi:type="core:ViewContainer" id="_if8lwCHmEfCHXrqDtvt3yA" name="Input Voucher Code Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-          <annotations text="/voucher/:id"/>
-          <viewElements xsi:type="ext:Form" id="_nMtP0CHmEfCHXrqDtvt3yA" name="Input Voucher Code">
-            <parameters id="_4sD9ACdUEfCZsujHyoUQXg" name="id" direction="inout">
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </parameters>
-            <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_K1ZmkCHnEfCHXrqDtvt3yA" name="Submit">
-              <outInteractionFlows xsi:type="core:NavigationFlow" id="_Qp8YECHnEfCHXrqDtvt3yA"/>
-              <outInteractionFlows xsi:type="core:NavigationFlow" id="_ULWDACddEfCFSMFf2rjckQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
-            </viewElementEvents>
-            <viewComponentParts xsi:type="core:DataBinding" id="_BUwFkCdfEfCFSMFf2rjckQ" name="Data Binding" uniformResourceIdentifier="api/voucher/post">
-              <subViewComponentParts xsi:type="ext:SimpleField" id="_LVGJICdfEfCFSMFf2rjckQ" name="VoucherCode">
-                <annotations text="Required"/>
-                <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Rkd1cCdfEfCFSMFf2rjckQ" name="voucherCode">
-                  <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </subViewComponentParts>
-                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </subViewComponentParts>
-            </viewComponentParts>
-          </viewElements>
-        </viewElements>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_PLGcQCddEfCFSMFf2rjckQ" name="Save Voucher" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_PLGcQCddEfCFSMFf2rjckQ" name="Save Voucher" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
         <annotations text="POST"/>
         <actionEvents id="_xL_DgCdkEfCFSMFf2rjckQ">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_yJsB4CdkEfCFSMFf2rjckQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_yJsB4CdkEfCFSMFf2rjckQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
         </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_78zz8CHhEfCHXrqDtvt3yA" name="Vouchers Page">
+        <annotations text="/voucher"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="Main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.1"/>
+        <viewElements xsi:type="ext:List" id="_BILlQCHlEfCHXrqDtvt3yA" name="Table Vouchers">
+          <viewElementEvents id="_bXeHMCHmEfCHXrqDtvt3yA" name="Enter Code">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_HbJGMCHnEfCHXrqDtvt3yA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+              <parameterBindingGroup id="__UuTECdUEfCZsujHyoUQXg">
+                <parameterBindings id="_EcbMsCdVEfCZsujHyoUQXg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_SNA_QCHlEfCHXrqDtvt3yA" name="Vouchers Data" uniformResourceIdentifier="/api/voucher/get">
+            <parameters id="_w188YCdUEfCZsujHyoUQXg" name="id" direction="inout">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </parameters>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_DYj3ACHmEfCHXrqDtvt3yA" name="voucherDescription" featureConcept="//@domainModel/@domainElements.40"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="core:VisualizationAttribute" id="_ZfZnwCHlEfCHXrqDtvt3yA" name="voucherName" featureConcept="//@domainModel/@domainElements.39"/>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_if8lwCHmEfCHXrqDtvt3yA" name="Input Voucher Code Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/voucher/:id"/>
+        <viewElements xsi:type="ext:Form" id="_nMtP0CHmEfCHXrqDtvt3yA" name="Input Voucher Code">
+          <parameters id="_4sD9ACdUEfCZsujHyoUQXg" name="id" direction="inout">
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </parameters>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_K1ZmkCHnEfCHXrqDtvt3yA" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_Qp8YECHnEfCHXrqDtvt3yA"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_ULWDACddEfCFSMFf2rjckQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_BUwFkCdfEfCFSMFf2rjckQ" name="Data Binding" uniformResourceIdentifier="api/voucher/post">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_LVGJICdfEfCFSMFf2rjckQ" name="VoucherCode">
+              <annotations text="Required"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Rkd1cCdfEfCFSMFf2rjckQ" name="voucherCode">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
