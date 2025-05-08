@@ -24,7 +24,7 @@
       </viewElementEvents>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_6ye_YCtkEfCZqva5fscC8Q" name="AdminDashboard">
-      <annotations text="/AdminDashboard"/>
+      <annotations text="Admin Dashboard"/>
       <viewElementEvents id="_8sl7oCtkEfCZqva5fscC8Q" name="AdminDashboard">
         <outInteractionFlows xsi:type="core:NavigationFlow" id="_DJH6MCtlEfCZqva5fscC8Q">
           <targetInteractionFlowElement xsi:type="core:ViewContainer" href="admindashboard.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
