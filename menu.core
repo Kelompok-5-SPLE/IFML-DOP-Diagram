@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_Webf0DeLEfCA9Pt-LVzVyg">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_Webf0DeLEfCA9Pt-LVzVyg">
   <annotations text="Menu"/>
   <interactionFlowModel id="_ovVrYDeLEfCA9Pt-LVzVyg">
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_ovXgkDeLEfCA9Pt-LVzVyg" name="Menu">
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_s3howDeLEfCA9Pt-LVzVyg" name="Menu" isXOR="true">
+      <inputPorts id="_rzJ1UDfFEfCXGv64U21_3Q" name="Input Port"/>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_s3howDeLEfCA9Pt-LVzVyg" name="Menu Page">
         <annotations text="/menu"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElements xsi:type="ext:List" id="_w_u0QDeLEfCA9Pt-LVzVyg" name="Table Menu">
@@ -13,16 +14,6 @@
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_8ArZMDeLEfCA9Pt-LVzVyg" name="price" featureConcept="//@domainModel/@domainElements.4"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_8h2MkDeLEfCA9Pt-LVzVyg" name="category" featureConcept="//@domainModel/@domainElements.5"/>
           </viewComponentParts>
-        </viewElements>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="dop-extension:Delta" id="_W18ekDekEfCXGv64U21_3Q" name="PromotionalMenu" isXOR="true" uses="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
-        <viewElements xsi:type="dop-extension:Delta" id="_jyVcgDekEfCXGv64U21_3Q" name="Table Promotional Menu Page" uses="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
-          <annotations text="/promotionalmenu"/>
-          <viewElements xsi:type="dop-extension:ModifiedList" id="_rhTTUDekEfCXGv64U21_3Q" name="Table Menu" modifies="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0">
-            <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_wQ09gDekEfCXGv64U21_3Q" name="List Promotional Menu" uniformResourceIdentifier="call/promotionalmenu/list">
-              <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_6Yz6IDekEfCXGv64U21_3Q" name="discountPercentage" featureConcept="//@domainModel/@domainElements.14"/>
-            </viewComponentParts>
-          </viewElements>
         </viewElements>
       </interactionFlowModelElement>
     </interactionFlowModelElements>

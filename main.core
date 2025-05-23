@@ -4,12 +4,18 @@
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_cmyoYDePEfCA9Pt-LVzVyg" name="Home" isXOR="true">
       <annotations text="/"/>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_oOH34DePEfCA9Pt-LVzVyg" name="Menu">
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_CaB-wDfKEfCXGv64U21_3Q" name="Menu">
       <annotations text="Menu"/>
-      <viewElementEvents id="_vyJqADePEfCA9Pt-LVzVyg" name="Menu">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_RyuzcDeQEfCA9Pt-LVzVyg">
+      <viewElementEvents id="_PIGvsDfREfCXGv64U21_3Q" name="ViewElement Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_QC8nUDfREfCXGv64U21_3Q">
           <targetInteractionFlowElement xsi:type="core:ViewContainer" href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
         </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_g1IqwDfUEfCwDez3fPS-Aw" name="PromotionalMenu">
+      <annotations text="PromotionalMenu"/>
+      <viewElementEvents id="_lsuEwDfUEfCwDez3fPS-Aw" name="ViewElement Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_mxoeYDfUEfCwDez3fPS-Aw"/>
       </viewElementEvents>
     </interactionFlowModelElements>
   </interactionFlowModel>
