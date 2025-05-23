@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_wTgJIDfHEfCXGv64U21_3Q">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_wTgJIDfHEfCXGv64U21_3Q">
+  <interactionFlowModel id="_zHizsDfrEfC936IR9x64-A">
+    <interactionFlowModelElements xsi:type="dop-extension:DeltaModuleDefinition" id="_zHko4DfrEfC936IR9x64-A" name="Delta Kids Menu">
+      <annotations text="AddedFeature"/>
+      <interactionFlowModelElement xsi:type="dop-extension:Delta" id="_1J8wUDfrEfC936IR9x64-A" name="KidsMenu">
+        <viewElements xsi:type="dop-extension:Delta" id="_E4xZoDfsEfC936IR9x64-A" name="Table Kids Menu Page">
+          <annotations text="/kidsmenu"/>
+          <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
+          <viewElements xsi:type="dop-extension:ModifiedList" id="_KFcS0DfsEfC936IR9x64-A" name="Table Menu">
+            <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_PsJcoDfsEfC936IR9x64-A" name="List Kids Menu" uniformResourceIdentifier="call/kidsmenu/list">
+              <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_WcqHIDfsEfC936IR9x64-A" name="ageRestriction">
+                <featureConcept href="menu.core#//@domainModel/@domainElements.11"/>
+              </subViewComponentParts>
+              <modifies href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0"/>
+            </viewComponentParts>
+            <modifies href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
+          </viewElements>
+          <uses href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </viewElements>
+        <uses href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+      </interactionFlowModelElement>
+      <uses href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
   <domainModel id="_wTgJITfHEfCXGv64U21_3Q">
     <domainElements xsi:type="core:UMLDomainConcept" id="_wTrIQDfHEfCXGv64U21_3Q" name="MenuImpl">
       <classifier xsi:type="uml:Class" href="../restaurant/restaurant.uml#_jCZNgCHQEfCNcqLFs-Q7tw"/>

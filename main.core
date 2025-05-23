@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_K6PuIDePEfCA9Pt-LVzVyg">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_K6PuIDePEfCA9Pt-LVzVyg">
   <interactionFlowModel id="_cmwzMDePEfCA9Pt-LVzVyg">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_cmyoYDePEfCA9Pt-LVzVyg" name="Home" isXOR="true">
       <annotations text="/"/>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_CaB-wDfKEfCXGv64U21_3Q" name="Menu">
       <annotations text="Menu"/>
-      <viewElementEvents id="_PIGvsDfREfCXGv64U21_3Q" name="ViewElement Event">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_QC8nUDfREfCXGv64U21_3Q">
+      <viewElementEvents id="_EzgUkDfrEfC936IR9x64-A" name="ViewElement Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_FkK8gDfrEfC936IR9x64-A">
           <targetInteractionFlowElement xsi:type="core:ViewContainer" href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_g1IqwDfUEfCwDez3fPS-Aw" name="PromotionalMenu">
       <annotations text="PromotionalMenu"/>
-      <viewElementEvents id="_lsuEwDfUEfCwDez3fPS-Aw" name="ViewElement Event">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_mxoeYDfUEfCwDez3fPS-Aw"/>
+      <viewElementEvents id="_-FDfkDfqEfC936IR9x64-A" name="ViewElement Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_-97BQDfqEfC936IR9x64-A">
+          <targetInteractionFlowElement xsi:type="dop-extension:Delta" href="promotionalmenu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_hBW08DfsEfC936IR9x64-A" name="KidsMenu">
+      <annotations text="KidsMenu"/>
+      <viewElementEvents id="_k4rEwDfsEfC936IR9x64-A" name="ViewElement Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_mKzbADfsEfC936IR9x64-A">
+          <targetInteractionFlowElement xsi:type="dop-extension:Delta" href="kidsmenu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_0HbRcDftEfC936IR9x64-A" name="TraditionalMenu">
+      <annotations text="TraditionalMenu"/>
+      <viewElementEvents id="_4usXgDftEfC936IR9x64-A" name="ViewElement Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_5zrCkDftEfC936IR9x64-A">
+          <targetInteractionFlowElement xsi:type="dop-extension:Delta" href="traditionalmenu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
+        </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
   </interactionFlowModel>
