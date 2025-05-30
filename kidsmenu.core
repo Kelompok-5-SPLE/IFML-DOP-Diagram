@@ -12,6 +12,18 @@
               <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_WcqHIDfsEfC936IR9x64-A" name="ageRestriction">
                 <featureConcept href="menu.core#//@domainModel/@domainElements.11"/>
               </subViewComponentParts>
+              <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_6McCcD2AEfCaV43lGVm4Hg" name="name">
+                <featureConcept href="menu.core#//@domainModel/@domainElements.2"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_9m3h8D2AEfCaV43lGVm4Hg" name="description">
+                <featureConcept href="menu.core#//@domainModel/@domainElements.3"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_BlIHQD2BEfCaV43lGVm4Hg" name="price">
+                <featureConcept href="menu.core#//@domainModel/@domainElements.4"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_CfBjsD2BEfCaV43lGVm4Hg" name="category">
+                <featureConcept href="menu.core#//@domainModel/@domainElements.5"/>
+              </subViewComponentParts>
               <modifies href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0"/>
             </viewComponentParts>
             <modifies href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>

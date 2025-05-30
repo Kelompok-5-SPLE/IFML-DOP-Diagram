@@ -12,6 +12,18 @@
               <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_pfqBgDftEfC936IR9x64-A" name="origin">
                 <featureConcept href="menu.core#//@domainModel/@domainElements.17"/>
               </subViewComponentParts>
+              <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Mrd3oD2DEfCaV43lGVm4Hg" name="name">
+                <featureConcept href="menu.core#//@domainModel/@domainElements.2"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_NPWAwD2DEfCaV43lGVm4Hg" name="description">
+                <featureConcept href="menu.core#//@domainModel/@domainElements.3"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_NqBKkD2DEfCaV43lGVm4Hg" name="price">
+                <featureConcept href="menu.core#//@domainModel/@domainElements.4"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_OGtGkD2DEfCaV43lGVm4Hg" name="category">
+                <featureConcept href="menu.core#//@domainModel/@domainElements.5"/>
+              </subViewComponentParts>
               <modifies href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0"/>
             </viewComponentParts>
             <modifies href="menu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
