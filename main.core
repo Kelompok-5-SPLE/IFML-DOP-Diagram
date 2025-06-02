@@ -36,6 +36,22 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_s0IBwD8mEfCodYljrpr4vQ" name="SpicyMenu">
+      <annotations text="SpicyMenu"/>
+      <viewElementEvents id="_nT1hoD8pEfCY0_j9hH5o-g" name="ViewElement Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_1He3sD8pEfCY0_j9hH5o-g">
+          <targetInteractionFlowElement xsi:type="dop-extension:Delta" href="spicymenu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_17FmQD8mEfCodYljrpr4vQ" name="BeverageMenu">
+      <annotations text="BeverageMenu"/>
+      <viewElementEvents id="_opgUED8pEfCY0_j9hH5o-g" name="ViewElement Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_vYpsoD8pEfCY0_j9hH5o-g">
+          <targetInteractionFlowElement xsi:type="dop-extension:Delta" href="beveragemenu.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_K6PuITePEfCA9Pt-LVzVyg">
     <domainElements xsi:type="core:UMLDomainConcept" id="_K6UmoDePEfCA9Pt-LVzVyg" name="MenuImpl">

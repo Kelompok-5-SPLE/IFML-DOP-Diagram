@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_Webf0DeLEfCA9Pt-LVzVyg">
+  <annotations text="BeverageMenu"/>
   <interactionFlowModel id="_ovVrYDeLEfCA9Pt-LVzVyg">
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_ovXgkDeLEfCA9Pt-LVzVyg" name="Menu">
       <inputPorts id="_rzJ1UDfFEfCXGv64U21_3Q" name="Input Port"/>

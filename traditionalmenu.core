@@ -6,7 +6,6 @@
       <interactionFlowModelElement xsi:type="dop-extension:Delta" id="_WC34sDftEfC936IR9x64-A" name="TraditionalMenu">
         <viewElements xsi:type="dop-extension:Delta" id="_b6H_8DftEfC936IR9x64-A" name="Table Traditional Menu Page">
           <annotations text="/traditionalmenu"/>
-          <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElementEvents.0/@outInteractionFlows.0"/>
           <viewElements xsi:type="dop-extension:ModifiedList" id="_gy_MUDftEfC936IR9x64-A" name="Table Menu">
             <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_k3vbMDftEfC936IR9x64-A" name="List Traditional Menu" uniformResourceIdentifier="call/traditionalmenu/list">
               <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_pfqBgDftEfC936IR9x64-A" name="origin">
